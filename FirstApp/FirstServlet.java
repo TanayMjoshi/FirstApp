@@ -1,0 +1,40 @@
+import javax.servlet.*;
+import java.io.*;
+
+public class FirstServlet implements Servlet{
+
+    static {
+        System.out.println("ServletLoading: FirstServlet.class file is loading...");
+    }
+
+    public FirstServlet(){
+        System.out.println("ServletInstantiation: FirstServlet object got created...");
+    }
+
+    @Override
+    public void init(ServletConfig config) throws ServletException{
+        System.out.println("ServletInitialization: init()");
+    }
+
+    @Override
+    public ServletConfig getServletConfig(){ //inline methods
+        return null;
+    }
+
+    @Override
+    public void service(ServletRequest request, ServletResponse response)
+            throws ServletException, IOException{
+        System.out.println("RequestProcessingPhase: service()");
+    }
+
+    @Override
+    public String getServletInfo(){ //inline methods
+        return "Developed by Tanay";
+    }
+
+    @Override
+    public void destroy(){
+        System.out.println("ServletSeInstallation: destroy()");
+    }
+}
+

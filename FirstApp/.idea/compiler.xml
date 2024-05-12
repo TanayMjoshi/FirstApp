@@ -9,8 +9,5 @@
         <module name="FirstApp" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="FirstApp" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
